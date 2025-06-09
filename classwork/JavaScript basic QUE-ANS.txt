@@ -1,0 +1,146 @@
+ JAVA SCRIPT:-
+
+1.What is JavaScript?
+Ans)JavaScript is a high-level , interpreted Programming Language that is one core technologies of the web , along side HTML and CSS.
+                             OR
+1)What is JavaScript?
+Ans)JS is a single threated programing language used to add interactive it in web pages . It execute take line by line.
+
+2)Founder Name :- Brendan Eich         
+
+3)ES = ECMAScript
+
+4)ES6 = ECMAScript6
+ 
+*)ES and ES6 different:
+
+  ES :-the standard for JavaScript.
+  ES6:-ES6 is the 6th version of ECMAScript. Released in 2015.
+
+5)What is ES6?
+Ans)ES6 , also knows as ECMAScript 2015,is the sixth Major Version of the ECMAScript standard , which is the Specification for JS. it was relased in June 2015 and introduced significant features so the JS language.
+
+6)Importance:-1.Let and Const
+              2.Arrow Function
+              3.class
+              4.Modules
+              5.Template
+
+7)2 Method JS link
+1.Internal
+2.External
+
+1)<script>
+    JS
+</script>
+
+2)<script src="./Script.jS"></script>
+
+8)Function Type:
+1.alert(Simple message Print)
+2.confirm(Yes or no)
+3.prompt("Enter Your Name")
+
+9)What is variable?
+Ans)A container to store some value.
+
+10)In JS there are three Keyword used to create variable:
+ 1.var(Function Scope)
+ 2.let(Block Scope)
+ 3.const(Block Scope)
+
+
+11)re-declare and re-initialize means?
+Ans)re-declare: var x=5;  Note->datatype hoy
+    re-initialize: x=3;   Note->Not use Datatype
+
+12)var and let different:
+            var                                 let
+ 1.re-declare and re-initialize       1.re-declare not possible                             
+   possible.                            re-initialize possible.
+
+13)What Is Data-Type Name In JS?
+Ans)1)Primitive                        2)Non-Primitive 
+    ->String                           ->Object/Array
+    ->Number
+    ->Boolean
+    ->Null
+    ->Undefined
+    ->Symbol
+    ->Bigint 
+
+14)To Check the data type we can use type of() Function.
+
+15)Types Of Operator:-
+ Ans)Arithmetic(+,-,*,/)
+    Comparsion (<,>,<=,>=,==,===,!=)
+    Logical(||,&&)
+    Assignment(+=,-=,=)
+
+   Note :- 1)== -> This compare the value.
+           2)=== ->This compare the data type and value both.
+
+16)Implicit and Explicit different:-
+
+                   Implicit                                    Explicit
+
+1.Who performs:-  Compiler & Interpreter                       Programmer
+ It
+
+2.Is It auto- :-  Yes                                          No
+matic 
+
+3.Control Over :- Low                                          High                                          
+ Conversion 
+
+4.Syntax requi-:- No                                           Yes
+red
+
+17)Implicit And Explicit:
+Implicit:- Data type Change by JS.
+Explicit:- Data Type Change by us.
+
+18)JavaScript ko kon execute karta hai?
+Ans)Web browser JavaScript engine.
+
+19)Function in prompt:-
+Ans)user ne ek box kholse , jema te koi pan text tyoe kari shake and return string aapse.
+
+20)Function in confirm:-
+Ans)Ok and Cancel button hoy.
+
+21)Function in alert:-
+Ans)User ko sirf ok button dekh sakta he.
+
+22)What is Console?
+Ans)Console ek screen jaisi hoti hai,jahan JavaScript ka output dikhai deta hai.
+    and message print kar shakte he.
+
+23)Undefind and Null me differents kya he?
+Ans)i)Jab kisi variable ko declare kiya jata hai lekin usme koi value assign nahi
+      nahi ki jati ,tab uske value undefind hoti he.
+
+         Ex:-let a;
+             console.log(a);
+
+   ii)jab ham kisi variable me koy value ham assign kare ,tab aap usme null 
+       assign karte ho.
+         
+        Ex:-let b = null;
+            console.log(b);
+
+24)What is type of?
+Ans)Type of JS ka operator he jo batata he kisi value ya variable ka type kaya 
+    he
+
+25)What is Implicit?
+Ans)JS khud se datatype change kar deti he jab zarurat hoti he.
+
+26)What is Explicit?
+Ans)jab ap khud value ka type badlate ho using JS Function.4
+
+27)template literals:- syntax:-
+      `(backtick)
+      let name = "Ruchi"
+      let str = `My name is ${name}` 
+      console.log(str); 
