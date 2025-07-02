@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Form</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+ <style>
+    body {
+      text-align: center;  
+    }
+    #App{
+        font-size:30px;
+    }
+    #num1{
+      font-size: 60px;
+      margin: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 18px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  </style>
+<body>
+  <div class="flex justify-center bg-green-200 items-center min-h-screen">  
+<div class="border-2 w-180 h-65 bg-white rounded-2xl">
+    <!-- <h1 id="App">Container</h1> -->
+  <div id="num1" class="">0</div> 
+  <button onclick="minus()" class="border-2 w-50 rounded-3xl" > Minus</button>
+  <button onclick="reset()" class="border-2 w-50 rounded-3xl" >Reset</button>
+  <button onclick="plus()" class="border-2 w-50 rounded-3xl"> Plus</button>
+     </div>
+     </div>
+    <script src="./script.js"></script>
+</body>
+</html>
