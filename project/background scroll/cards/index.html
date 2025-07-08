@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+         #box{
+            text-align: center;
+            font-size:30px;
+            height:300px;
+            width:300px;
+            border-radius:20px;
+            border:2px solid black;
+            margin:10px 15px;
+         }
+        
+         #bt{
+            display: flex;
+         }
+         #btn{
+            text-align: center;
+            padding:5px 0px;
+            cursor: pointer;
+            margin:10px 15px;
+            width:80px;
+            border-radius:20px;
+            border:2px solid black; 
+         }
+              #btn2{
+            text-align: center;
+            padding:5px 0px;
+            cursor: pointer;
+            margin:10px 15px;
+            width:80px;
+            border-radius:20px;
+            border:2px solid black; 
+         }
+     </style>
+</head>
+<body>
+        <div class="main">
+       <div id="box"></div>
+        <div id="bt">
+       <div id="btn" onclick="magic1()"> < </div>
+       <div id="btn2" onclick="magic()"> > </div>
+        </div>
+        </div>
+    <script src="./script.js"></script>
+</body>
+</html>
