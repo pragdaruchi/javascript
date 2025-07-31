@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exam Timer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #eef;
+    }
+
+    #box {
+      background-color: #eef;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #box1 {
+      background-color: rgb(229, 229, 137);
+      height: 500px;
+      width: 25%;
+      border-radius: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #text {
+      margin-bottom: 30px;
+    }
+
+    #time {
+      font-weight: bolder;
+      font-size: 40px;
+      background: #fff;
+      padding: 20px 50px;
+      border-radius: 10px;
+      display: inline-block;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+    <div id="box1">
+      <h1 id="text">Exam Time Start</h1>
+      <div id="time">05:00</div>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
