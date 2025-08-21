@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+  <div class="w-full max-w-md bg-white shadow-xl rounded-2xl p-6 space-y-6">
+    <div class="flex gap-2">
+      <input type="text" id="inp" placeholder="Enter product id (1-20)" class="flex-1 h-12 px-4 rounded-xl border border-gray-300 focus:ring-2 focus:ring-blue-500 outline-none">
+      <button onclick="fetchData2()" class="px-6 py-2 bg-blue-600 text-white rounded-xl shadow hover:bg-blue-700 transition">Enter</button>
+    </div>
+
+    <div class="border rounded-2xl shadow-md p-4 flex flex-col items-center text-center bg-gray-50">
+      <h1 id="heading" class="text-lg font-semibold mb-4 text-gray-800"></h1>
+      <img  id="img" class="h-64 object-contain rounded-xl" alt="">
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
