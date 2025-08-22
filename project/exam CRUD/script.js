@@ -29,40 +29,34 @@ function read() {
     let age = document.createElement("p")
     let city = document.createElement("p")
  let delBtn = document.createElement("button")
- let editBtn = document.createElement("button")
 
     name.innerHTML = student.name;
     age.innerHTML = student.age;
     city.innerHTML = student.city;
    delBtn.innerText = "Delete"
-   delBtn.innerText = "Update"
 
     delBtn.classList.add("deleteBtn")
     delBtn.setAttribute("data-id",student.id)
-     editBtn.classList.add("deleteBtn")
-    editBtn.setAttribute("data-id",student.id)
 
     div.classList.add("box")
     div.append(name)
     div.append(age)
     div.append(city)
     div.append(delBtn)
-    div.append(editBtn)
     cards.append(div)
   });
 
- let delBtns = document.querySelectorAll(".deleteBtn") 
+  let del = document.querySelectorAll(".deleteBtn")
 
-  delBtns.forEach((btn)=>{
-    btn.addEventListener("click",()=>{
+  del.forEach((btn) => {
+    btn.addEventListener("click", () => {
       let id = btn.getAttribute("data-id")
       let allData = JSON.parse(localStorage.getItem("student"));
-      let newData = allData.filter((item)=>item.id != id)
-      
-      localStorage.setItem("student",JSON.stringify(newData))
+      let newData = allData.filter((item) => item.id != id)
+
+      localStorage.setItem("student", JSON.stringify(newData))
       read()
     })
   })
 }
-
 read();
