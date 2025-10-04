@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invoice</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 p-8">
+<h2 class="calc">Invoice With Calculation</h2>
+<div class="invoice-container">
+    <div class="invoice-card" id="inv1">
+        <h3>INVOICE</h3>
+        <div class="customer-info">
+            <input type="text" placeholder="Enter Customer Name" id="inv1-name">
+            <input type="text" placeholder="INV No." id="inv1-no">
+        </div>
+        <div class="customer-info">
+            <input type="text" placeholder="Full Address" id="inv1-address">
+            <input type="date" id="inv1-date">
+        </div>
+        <div class="customer-info">
+            <input type="text" placeholder="City" id="inv1-city">
+        </div>
+        <div class="table-header">
+            <div>#</div>
+            <div>Particular</div>
+            <div>QTY</div>
+            <div>Rate</div>
+            <div>Amount</div>
+        </div>
+        <div class="table-row">
+            <div>1</div>
+            <div><input type="text" placeholder="Item 1"></div>
+            <div><input type="number" placeholder="0" id="inv1-qty1"></div>
+            <div><input type="number" placeholder="0" id="inv1-rate1"></div>
+            <div><input type="number" placeholder="0" id="inv1-amount1" readonly></div>
+        </div>
+        <div class="table-row">
+            <div>2</div>
+            <div><input type="text" placeholder="Item 2"></div>
+            <div><input type="number" placeholder="0" id="inv1-qty2"></div>
+            <div><input type="number" placeholder="0" id="inv1-rate2"></div>
+            <div><input type="number" placeholder="0" id="inv1-amount2" readonly></div>
+        </div>
+        <div class="totals">
+            <div>SubTotal: <span id="inv1-subtotal">0</span></div>
+            <div>GST: <span id="inv1-gst">0</span></div>
+            <div>Net Amount: <span id="inv1-net">0</span></div>
+        </div>
+        <button id="inv1-print" class="btn">Print</button>
+        <button id="Additem" class="btn">Additem</button>
+    </div>
+    <div class="invoice-card" id="inv2">
+        <h3>INVOICE</h3>
+        <div class="customer-info">
+            <input type="text" placeholder="Enter Customer Name" id="inv2-name">
+            <input type="text" placeholder="INV No." id="inv2-no">
+        </div>
+        <div class="customer-info">
+            <input type="text" placeholder="Full Address" id="inv2-address">
+            <input type="date" id="inv2-date">
+        </div>
+        <div class="customer-info">
+            <input type="text" placeholder="City" id="inv2-city">
+        </div>
+        <div class="table-header">
+            <div>#</div>
+            <div>Particular</div>
+            <div>QTY</div>
+            <div>Rate</div>
+            <div>Amount</div>
+        </div>
+        <div class="table-row">
+            <div>1</div>
+            <div><input type="text" placeholder="Item 1"></div>
+            <div><input type="number" placeholder="0" id="inv2-qty1"></div>
+            <div><input type="number" placeholder="0" id="inv2-rate1"></div>
+            <div><input type="number" placeholder="0" id="inv2-amount1" readonly></div>
+        </div>
+        <div class="table-row">
+            <div>2</div>
+            <div><input type="text" placeholder="Item 2"></div>
+            <div><input type="number" placeholder="0" id="inv2-qty2"></div>
+            <div><input type="number" placeholder="0" id="inv2-rate2"></div>
+            <div><input type="number" placeholder="0" id="inv2-amount2" readonly></div>
+        </div>
+        <div class="totals">
+            <div>SubTotal: <span id="inv2-subtotal">0</span></div>
+            <div>GST: <span id="inv2-gst">0</span></div>
+            <div>Net Amount: <span id="inv2-net">0</span></div>
+        </div>
+    </div>
+</div>
+<script src="./script.js"></script>
+</body>
+</html>
+
