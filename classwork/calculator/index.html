@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="flex">
+      <div class="border">
+        <h1 class="text">EMI Calculator</h1>
+        <div>
+            <h4>Loan Amount</h4>
+            <input type="number" onchange="loan()" placeholder="Enter Your Loan-Amount" id="loan">
+        </div>
+        <div>
+            <h4>Internet Rate</h4>
+            <input type="number" onchange="loan()" placeholder="Enter Your interset Rante" id="rante">
+        </div>
+        <div>
+            <h4>Loan Term</h4>
+            <input type="number" onchange="loan()" placeholder="Loan" id="term">
+        </div>
+        <button id="btn" type="submit">Submit</button>
+        <div id="circle" class="circle"></div>
+        <script src="./index.js"></script>
+    </div>
+   </div>
+</body>
+</html>
